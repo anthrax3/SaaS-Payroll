@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Common", "0 Common", "{C13BC277-9FD4-407B-91F2-AA6417C5A6FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Presentation", "1 Presentation", "{EBB09182-FC83-4940-909E-7A0BBDCF86A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Service", "2 Service", "{62BD6000-C265-42EF-9E2C-DB3ECE351138}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 BLL", "3 BLL", "{7CE6ED71-84F3-42D5-9126-F364BDE0F384}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 DAL", "4 DAL", "{9AFC118C-A0B4-4BD9-8547-E1AB329B486D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Test", "5 Test", "{F380420D-A07B-41C0-9375-CB4CC5496E65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.Common.Models", "OpenQbit.Payroll.Common.Models\OpenQbit.Payroll.Common.Models.csproj", "{9C842B7B-F408-49A7-877E-A1F2C716F18C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C842B7B-F408-49A7-877E-A1F2C716F18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C842B7B-F408-49A7-877E-A1F2C716F18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C842B7B-F408-49A7-877E-A1F2C716F18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C842B7B-F408-49A7-877E-A1F2C716F18C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C842B7B-F408-49A7-877E-A1F2C716F18C} = {C13BC277-9FD4-407B-91F2-AA6417C5A6FD}
+	EndGlobalSection
+EndGlobal
