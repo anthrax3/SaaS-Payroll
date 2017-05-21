@@ -1,6 +1,0 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/OpenQbit.PayrollSystem.git/OpenQbit.Payroll.Common.Models/obj/Debug
-/OpenQbit.PayrollSystem.git/.vs/OpenQbit.Payroll/v14/.suo
