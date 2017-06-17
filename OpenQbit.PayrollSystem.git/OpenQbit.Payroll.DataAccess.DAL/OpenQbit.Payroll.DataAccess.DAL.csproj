@@ -49,6 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201706170545532_initdb.cs" />
+    <Compile Include="Migrations\201706170545532_initdb.Designer.cs">
+      <DependentUpon>201706170545532_initdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PayrollContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,6 +66,11 @@
       <Project>{9c842b7b-f408-49a7-877e-a1f2c716f18c}</Project>
       <Name>OpenQbit.Payroll.Common.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706170545532_initdb.resx">
+      <DependentUpon>201706170545532_initdb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

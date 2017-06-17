@@ -10,6 +10,6 @@ namespace OpenQbit.Payroll.Common.Models
     {
         public int Id { get; set; }
         public string BankName { get; set; }
-        public virtual Employee Employee { get; set; }
+        //public virtual Employee Employee { get; set; }
     }
 }

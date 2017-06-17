@@ -26,8 +26,11 @@ namespace OpenQbit.Payroll.DataAccess.DAL
         public DbSet<Loan> dbLone { get; set; }
         public DbSet<Deduction> dbDeduction { get; set; }
         public DbSet<Leaves> dbLeaves{ get; set; }
-        public DbSet<BonusType> dbAttendance { get; set; }
+        public DbSet<BonusType> dbBonusType { get; set; }
         public DbSet<Bonus> dbBonus { get; set; }
+        public DbSet<Bank> dbBank { get; set; }
+        public DbSet<Salary> dbSalary { get; set; }
+       
 
     }
 }
