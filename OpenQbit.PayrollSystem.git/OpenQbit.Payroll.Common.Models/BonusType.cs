@@ -11,7 +11,7 @@ namespace OpenQbit.Payroll.Common.Models
         public int Id { get; set; }
         public string Type { get; set; }
         public double Amount { get; set; }
-
+        // test comits
         public virtual ICollection<Bonus> Bonus { get; set; }
     }
 }
