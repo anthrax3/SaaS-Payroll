@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace OpenQbit.Payroll.Common.Models
 {
-   public  class Transport
+    public class BonusType
     {
         public int Id { get; set; }
-        public string From { get; set; }
-        public string Destination { get; set; }
-        public double Charge { get; set; }
+        public string Type { get; set; }
+        public double Amount { get; set; }
+        // test comits
+        public virtual ICollection<Bonus> Bonus { get; set; }
     }
 }

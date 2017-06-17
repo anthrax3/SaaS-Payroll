@@ -20,5 +20,9 @@ namespace OpenQbit.Payroll.Common.Models
         public string Address { get; set; }
         public string Email { get; set; }
         public string MaritalStatus { get; set; }
+
+        public virtual ICollection<Employee> Emloyee { get; set; }
+        public virtual ICollection<SystemUser> SystemUser { get; set; }
+
     }
 }

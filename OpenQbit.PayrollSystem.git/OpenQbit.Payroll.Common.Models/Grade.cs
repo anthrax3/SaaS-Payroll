@@ -17,5 +17,8 @@ namespace OpenQbit.Payroll.Common.Models
         public bool VehicleAllowance { get; set; }
         public double NoPayRate { get; set; }
 
+        public virtual ICollection<Bonus> Bonus { get; set; }
+        public virtual ICollection<Employee> Employee { get; set; }
+
     }
 }

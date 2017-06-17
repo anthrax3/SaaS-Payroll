@@ -10,5 +10,7 @@ namespace OpenQbit.Payroll.Common.Models
     {
         public int Id { get; set; }
         public string RoleName { get; set; }
+
+        public virtual ICollection<Employee> Employee { get; set; }
     }
 }
