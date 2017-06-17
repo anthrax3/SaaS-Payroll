@@ -9,7 +9,7 @@ namespace OpenQbit.Payroll.Common.Models
     public class Loan
     {
         public int Id { get; set; }
-        public string EmployeeId { get; set; }
+        public int EmployeeId { get; set; }
         public double LoanAmount { get; set; }
         public double MonthlyInstallement { get; set; }
         public DateTime Date { get; set; }
@@ -19,6 +19,8 @@ namespace OpenQbit.Payroll.Common.Models
         public string GuaranterName { get; set; }
         public string GuaranterNic { get; set; }
         public int GuaranterMobile { get; set; }
+
+        public virtual Employee Employee { get; set; }
 
     }
 }
