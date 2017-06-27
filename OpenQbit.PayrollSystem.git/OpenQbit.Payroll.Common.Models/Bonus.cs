@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQbit.Payroll.Common.Models.System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace OpenQbit.Payroll.Common.Models
    public  class Bonus
     {
         public int Id { get; set; }
+        public int SystemId { get; set; }
         public int GradeId { get; set; }
         public int TypeId { get; set; }
         public DateTime Date { get; set; }
@@ -16,6 +18,7 @@ namespace OpenQbit.Payroll.Common.Models
 
         public virtual BonusType BonusType { get; set; }
         public virtual Grade Grade { get; set; }
+        public virtual Systems System { get; set; }
 
     }
 }

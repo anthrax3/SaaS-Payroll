@@ -65,6 +65,8 @@
     <Compile Include="Role.cs" />
     <Compile Include="Salary.cs" />
     <Compile Include="SystemUser.cs" />
+    <Compile Include="System\Customer.cs" />
+    <Compile Include="System\System.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

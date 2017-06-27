@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQbit.Payroll.Common.Models.System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,7 @@ namespace OpenQbit.Payroll.Common.Models
         public virtual ICollection<Advance> Advance { get; set; }
         public virtual ICollection<Deduction> Deduction { get; set; }
         public virtual ICollection<Leaves> Leaves { get; set; }
+
 
     }
 }

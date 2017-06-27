@@ -1,4 +1,5 @@
 ﻿using OpenQbit.Payroll.Common.Models;
+using OpenQbit.Payroll.Common.Models.System;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -30,7 +31,9 @@ namespace OpenQbit.Payroll.DataAccess.DAL
         public DbSet<Bonus> dbBonus { get; set; }
         public DbSet<Bank> dbBank { get; set; }
         public DbSet<Salary> dbSalary { get; set; }
-       
+        public DbSet<Customer> dbCustomer { get; set; }
+        public DbSet<Systems> dbSystem { get; set; }
+
 
     }
 }

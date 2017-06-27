@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQbit.Payroll.Common.Models.System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace OpenQbit.Payroll.Common.Models
     public class Person
     {
         public int Id { get; set; }
+        public int SystemId { get; set; }
         public string GlobalId { get; set; }
         public string FirstName { get; set; }
         public string MidName { get; set; }
@@ -23,6 +25,7 @@ namespace OpenQbit.Payroll.Common.Models
 
         public virtual ICollection<Employee> Emloyee { get; set; }
         public virtual ICollection<SystemUser> SystemUser { get; set; }
+        public virtual Systems System { get; set; }
 
     }
 }

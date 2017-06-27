@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpenQbit.Payroll.Common.Models\OpenQbit.Payroll.Common.Models.csproj">
-      <Project>{9C842B7B-F408-49A7-877E-A1F2C716F18C}</Project>
+      <Project>{9c842b7b-f408-49a7-877e-a1f2c716f18c}</Project>
       <Name>OpenQbit.Payroll.Common.Models</Name>
     </ProjectReference>
   </ItemGroup>
