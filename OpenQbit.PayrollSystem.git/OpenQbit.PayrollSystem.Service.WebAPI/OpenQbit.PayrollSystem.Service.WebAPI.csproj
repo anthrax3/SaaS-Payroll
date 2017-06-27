@@ -213,6 +213,20 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\API\APIAdvance.cs" />
+    <Compile Include="Models\API\APIAttendance.cs" />
+    <Compile Include="Models\API\APIBank.cs" />
+    <Compile Include="Models\API\APIBonus.cs" />
+    <Compile Include="Models\API\APIBonusType.cs" />
+    <Compile Include="Models\API\APIDeduction.cs" />
+    <Compile Include="Models\API\APIDepartment.cs" />
+    <Compile Include="Models\API\APIEmployee.cs" />
+    <Compile Include="Models\API\APIGrade.cs" />
+    <Compile Include="Models\API\APILeaves.cs" />
+    <Compile Include="Models\API\APILoan.cs" />
+    <Compile Include="Models\API\APIRole.cs" />
+    <Compile Include="Models\API\APISalary.cs" />
+    <Compile Include="Models\API\APISystemUser.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -276,6 +290,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\API\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
