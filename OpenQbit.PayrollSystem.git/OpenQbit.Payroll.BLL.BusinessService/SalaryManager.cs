@@ -9,22 +9,21 @@ using OpenQbit.Payroll.Common.Utils.Logs;
 using OpenQbit.PayrollSystem.DataAccess.DAL.Contracts;
 
 namespace OpenQbit.Payroll.BLL.BusinessService
-{
-    public class AdvanceManager : IAdvanceManager
+{ 
+    public class SalaryManager : ISalaryManager
     {
-
         private IRepository repository;
         private ILogger logger;
 
-        public AdvanceManager(IRepository repository, ILogger logger)
+        public SalaryManager(IRepository repository, ILogger logger)
         {
             this.repository = repository;
             this.logger = logger;
         }
-        public bool RecordAdvance(Advance advance)
+        public bool RecordSalary(Salary salary)
         {
             logger.LogError("");
-            return repository.Create<Advance>(advance);
+            return repository.Create<Salary>(salary);
         }
     }
 }

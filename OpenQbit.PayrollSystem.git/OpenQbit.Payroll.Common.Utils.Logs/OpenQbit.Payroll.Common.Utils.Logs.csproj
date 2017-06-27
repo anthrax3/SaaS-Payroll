@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{63785ABE-530F-4451-A6A0-7555CA73D2D7}</ProjectGuid>
+    <ProjectGuid>{854F7F4C-F649-4357-81E8-0B4E0E273037}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenQbit.Payroll.BLL.BusinessService</RootNamespace>
-    <AssemblyName>OpenQbit.Payroll.BLL.BusinessService</AssemblyName>
+    <RootNamespace>OpenQbit.Payroll.Common.Utils.Logs</RootNamespace>
+    <AssemblyName>OpenQbit.Payroll.Common.Utils.Logs</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,45 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdvanceManager.cs" />
-    <Compile Include="AttendanceManager.cs" />
-    <Compile Include="BankManager.cs" />
-    <Compile Include="BonusManager.cs" />
-    <Compile Include="BonusTypeManager.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="DeductionManager.cs" />
-    <Compile Include="DepartmentManager.cs" />
-    <Compile Include="EmployeeManager.cs" />
-    <Compile Include="GradeManager.cs" />
-    <Compile Include="LeavesManager.cs" />
-    <Compile Include="LoanManager.cs" />
-    <Compile Include="PersonManager.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoleManager.cs" />
-    <Compile Include="SalaryManager.cs" />
-    <Compile Include="SystemUserManager.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OpenQbit.Payroll.BLL.BusinessService.Contracts\OpenQbit.Payroll.BLL.BusinessService.Contracts.csproj">
-      <Project>{1A5B37C8-FB3A-40FA-AD45-BF3B19E0B4D7}</Project>
-      <Name>OpenQbit.Payroll.BLL.BusinessService.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OpenQbit.Payroll.Common.Models\OpenQbit.Payroll.Common.Models.csproj">
-      <Project>{9c842b7b-f408-49a7-877e-a1f2c716f18c}</Project>
-      <Name>OpenQbit.Payroll.Common.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OpenQbit.Payroll.Common.Utils.Logs\OpenQbit.Payroll.Common.Utils.Logs.csproj">
-      <Project>{854F7F4C-F649-4357-81E8-0B4E0E273037}</Project>
-      <Name>OpenQbit.Payroll.Common.Utils.Logs</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OpenQbit.Payroll.DataAccess.DAL\OpenQbit.Payroll.DataAccess.DAL.csproj">
-      <Project>{0838b7a7-cdd6-40a5-a5a3-d59adf5332cd}</Project>
-      <Name>OpenQbit.Payroll.DataAccess.DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OpenQbit.PayrollSystem.DataAccess.DAL.Contracts\OpenQbit.PayrollSystem.DataAccess.DAL.Contracts.csproj">
-      <Project>{1F6434A2-02A9-4013-AC89-229C71E3D6FD}</Project>
-      <Name>OpenQbit.PayrollSystem.DataAccess.DAL.Contracts</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

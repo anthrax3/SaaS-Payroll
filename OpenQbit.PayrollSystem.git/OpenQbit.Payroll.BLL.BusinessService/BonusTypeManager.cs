@@ -10,21 +10,21 @@ using OpenQbit.PayrollSystem.DataAccess.DAL.Contracts;
 
 namespace OpenQbit.Payroll.BLL.BusinessService
 {
-    public class AdvanceManager : IAdvanceManager
+    public class BonusTypeManager : IBonusTypeManager
     {
 
         private IRepository repository;
         private ILogger logger;
 
-        public AdvanceManager(IRepository repository, ILogger logger)
+        public BonusTypeManager(IRepository repository, ILogger logger)
         {
             this.repository = repository;
             this.logger = logger;
         }
-        public bool RecordAdvance(Advance advance)
+        public bool RecordBonusType(BonusType bonusType)
         {
             logger.LogError("");
-            return repository.Create<Advance>(advance);
+            return repository.Create<BonusType>(bonusType);
         }
     }
 }
