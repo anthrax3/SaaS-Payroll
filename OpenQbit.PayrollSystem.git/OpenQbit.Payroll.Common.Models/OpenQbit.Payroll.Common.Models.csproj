@@ -54,6 +54,7 @@
     <Compile Include="Bank.cs" />
     <Compile Include="Bonus.cs" />
     <Compile Include="BonusType.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Deduction.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="Employee.cs" />
