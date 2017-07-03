@@ -54,10 +54,6 @@
       <Project>{0838b7a7-cdd6-40a5-a5a3-d59adf5332cd}</Project>
       <Name>OpenQbit.Payroll.DataAccess.DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OpenQbit.PayrollSystem.DataAccess.DAL.Contracts\OpenQbit.PayrollSystem.DataAccess.DAL.Contracts.csproj">
-      <Project>{1f6434a2-02a9-4013-ac89-229c71e3d6fd}</Project>
-      <Name>OpenQbit.PayrollSystem.DataAccess.DAL.Contracts</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

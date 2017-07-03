@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OpenQbit.PayrollSystem.DataAccess.DAL.Contracts;
+using OpenQbit.Payroll.DataAccess.DAL.Contracts;
 using OpenQbit.Payroll.Common.Utils.Logs;
 using OpenQbit.Payroll.DataAccess.DAL;
 using OpenQbit.Payroll.BLL.BusinessService;

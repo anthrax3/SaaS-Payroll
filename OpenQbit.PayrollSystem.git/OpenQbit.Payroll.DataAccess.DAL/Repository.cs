@@ -1,4 +1,4 @@
-﻿using OpenQbit.PayrollSystem.DataAccess.DAL.Contracts;
+﻿using OpenQbit.Payroll.DataAccess.DAL.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
