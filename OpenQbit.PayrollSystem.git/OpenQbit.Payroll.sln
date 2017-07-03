@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Common", "0 Common", "{C13BC277-9FD4-407B-91F2-AA6417C5A6FD}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.Common.Utils.Logs", "OpenQbit.Payroll.Common.Utils.Logs\OpenQbit.Payroll.Common.Utils.Logs.csproj", "{854F7F4C-F649-4357-81E8-0B4E0E273037}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.PayrollSystem.Service.WebAPI", "OpenQbit.PayrollSystem.Service.WebAPI\OpenQbit.PayrollSystem.Service.WebAPI.csproj", "{BDD7B771-24E7-47BD-A093-71F5E2BDAE10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.Common.Ioc", "OpenQbit.Payroll.Common.Ioc\OpenQbit.Payroll.Common.Ioc.csproj", "{F10E3541-ECE1-44C4-81D9-2F2F1E65783A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{BDD7B771-24E7-47BD-A093-71F5E2BDAE10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDD7B771-24E7-47BD-A093-71F5E2BDAE10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDD7B771-24E7-47BD-A093-71F5E2BDAE10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,5 +84,6 @@ Global
 		{D8E1D8A6-3B10-4AF6-A653-EC66DAD465BC} = {C13BC277-9FD4-407B-91F2-AA6417C5A6FD}
 		{854F7F4C-F649-4357-81E8-0B4E0E273037} = {D8E1D8A6-3B10-4AF6-A653-EC66DAD465BC}
 		{BDD7B771-24E7-47BD-A093-71F5E2BDAE10} = {62BD6000-C265-42EF-9E2C-DB3ECE351138}
+		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A} = {C13BC277-9FD4-407B-91F2-AA6417C5A6FD}
 	EndGlobalSection
 EndGlobal
