@@ -10,5 +10,12 @@ namespace OpenQbit.Payroll.BLL.BusinessService.Contracts
     public interface IAdvanceManager
     {
         bool RecordAdvance(Advance advance);
+        bool EditAdavance(Advance advance);
+        bool RemoveAdvance(Advance advance);
+        List<Advance> GetAllAdvances();
+        Advance FindAdvance(Advance advance);
+
     }
+
+
 }
