@@ -12,6 +12,7 @@ namespace OpenQbit.Payroll.Common.Models.System
         public string Name { get; set; }
         public string Addrss { get; set; }
         public string Mobile { get; set; }
+
         public string Email { get; set; }
 
         public virtual ICollection<Systems> System { get; set; }
