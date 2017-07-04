@@ -10,5 +10,9 @@ namespace OpenQbit.Payroll.BLL.BusinessService.Contracts
     public interface IBonusTypeManager
     {
         bool RecordBonusType(BonusType bonusType);
+        bool EditBonusType(BonusType bonusType);
+        bool RemoveBonusType(BonusType bonusType);
+        List<BonusType> GetAllBonusType();
+        BonusType FindBonusType(BonusType bonusType);
     }
 }
