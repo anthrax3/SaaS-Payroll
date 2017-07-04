@@ -15,7 +15,7 @@ namespace OpenQbit.Payroll.DataAccess.DAL
         private PayrollContext _db = new PayrollContext();
         public List<T> GetAll<T>() where T : class
         {
-            return _db.Set<T>().ToList();
+            return _db.Set<T>().ToList();  //_db.dbBank.Remove(new Common.Models.Bank { Id =15 });
         }
 
         public T Find<T>(Expression<Func<T, bool>> predicate) where T : class
