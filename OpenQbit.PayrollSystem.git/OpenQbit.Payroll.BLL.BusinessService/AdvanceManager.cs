@@ -29,7 +29,7 @@ namespace OpenQbit.Payroll.BLL.BusinessService
             return repository.Create<Advance>(advance);
         }
 
-        public bool EditAdavance(Advance advance)
+        public bool EditAdvance(Advance advance)
         {
             logger.LogError("");
             return repository.Update<Advance>(advance);

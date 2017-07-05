@@ -25,5 +25,30 @@ namespace OpenQbit.Payroll.BLL.BusinessService
             logger.LogError("");
             return repository.Create<Leaves>(leaves);
         }
+
+
+        public bool EditLeaves(Leaves leaves)
+        {
+            logger.LogError("");
+            return repository.Update<Leaves>(leaves);
+        }
+
+        public bool RemoveLeaves(Leaves leaves)
+        {
+            logger.LogError("");
+            return repository.Delete<Leaves>(leaves);
+        }
+
+        public List<Leaves> GetAllLeaves()
+        {
+            logger.LogError("");
+            return repository.GetAll<Leaves>();
+        }
+
+        public Leaves FindLeaves(Leaves leaves)
+        {
+            logger.LogError("");
+            return repository.Find<Leaves>(A => A.Id == leaves.Id);
+        }
     }
 }
