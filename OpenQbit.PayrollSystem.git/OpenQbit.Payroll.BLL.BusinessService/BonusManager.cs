@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using OpenQbit.Payroll.BLL.BusinessService.Contracts;
 using OpenQbit.Payroll.Common.Models;
 using OpenQbit.Payroll.Common.Utils.Logs;
-using OpenQbit.PayrollSystem.DataAccess.DAL.Contracts;
+using OpenQbit.Payroll.DataAccess.DAL.Contracts;
 
 namespace OpenQbit.Payroll.BLL.BusinessService
 {
@@ -24,6 +24,30 @@ namespace OpenQbit.Payroll.BLL.BusinessService
         {
             logger.LogError("");
             return repository.Create<Bonus>(bonus);
+        }
+
+        public bool EditBonus(Bonus bonus)
+        {
+            logger.LogError("");
+            return repository.Update<Bonus>(bonus);
+        }
+
+        public bool RemoveBonus(Bonus bonus)
+        {
+            logger.LogError("");
+            return repository.Delete<Bonus>(bonus);
+        }
+
+        public List<Bonus> GetAllBonus()
+        {
+            logger.LogError("");
+            return repository.GetAll<Bonus>();
+        }
+
+        public Bonus FindBonus(Bonus bonus)
+        {
+            logger.LogError("");
+            return repository.Find<Bonus>(B => B.Id == bonus.Id);
         }
     }
 }

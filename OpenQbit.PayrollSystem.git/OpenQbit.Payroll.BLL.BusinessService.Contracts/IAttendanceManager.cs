@@ -10,5 +10,9 @@ namespace OpenQbit.Payroll.BLL.BusinessService.Contracts
     public interface IAttendanceManager
     {
         bool RecordAttendance(Attendance attendance);
+        bool EditAttendance(Attendance attendance);
+        bool RemoveAttendance(Attendance attendance);
+        List<Attendance> GetAllAttendance();
+        Attendance FindAttendance(Attendance attendance);
     }
 }

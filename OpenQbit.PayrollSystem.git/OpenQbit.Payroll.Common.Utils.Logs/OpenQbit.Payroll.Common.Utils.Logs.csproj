@@ -45,6 +45,16 @@
     <Compile Include="Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenQbit.Payroll.Common.Models\OpenQbit.Payroll.Common.Models.csproj">
+      <Project>{9c842b7b-f408-49a7-877e-a1f2c716f18c}</Project>
+      <Name>OpenQbit.Payroll.Common.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Payroll.DataAccess.DAL\OpenQbit.Payroll.DataAccess.DAL.csproj">
+      <Project>{0838b7a7-cdd6-40a5-a5a3-d59adf5332cd}</Project>
+      <Name>OpenQbit.Payroll.DataAccess.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

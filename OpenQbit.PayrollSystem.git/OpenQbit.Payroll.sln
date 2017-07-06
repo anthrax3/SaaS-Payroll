@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Common", "0 Common", "{C13BC277-9FD4-407B-91F2-AA6417C5A6FD}"
 EndProject
@@ -23,13 +23,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.BLL.Busine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.BLL.BusinessService.Contracts", "OpenQbit.Payroll.BLL.BusinessService.Contracts\OpenQbit.Payroll.BLL.BusinessService.Contracts.csproj", "{1A5B37C8-FB3A-40FA-AD45-BF3B19E0B4D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.PayrollSystem.DataAccess.DAL.Contracts", "OpenQbit.PayrollSystem.DataAccess.DAL.Contracts\OpenQbit.PayrollSystem.DataAccess.DAL.Contracts.csproj", "{1F6434A2-02A9-4013-AC89-229C71E3D6FD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{D8E1D8A6-3B10-4AF6-A653-EC66DAD465BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.Common.Utils.Logs", "OpenQbit.Payroll.Common.Utils.Logs\OpenQbit.Payroll.Common.Utils.Logs.csproj", "{854F7F4C-F649-4357-81E8-0B4E0E273037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.PayrollSystem.Service.WebAPI", "OpenQbit.PayrollSystem.Service.WebAPI\OpenQbit.PayrollSystem.Service.WebAPI.csproj", "{BDD7B771-24E7-47BD-A093-71F5E2BDAE10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.Common.Ioc", "OpenQbit.Payroll.Common.Ioc\OpenQbit.Payroll.Common.Ioc.csproj", "{F10E3541-ECE1-44C4-81D9-2F2F1E65783A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.DataAccess.DAL.Contracts", "OpenQbit.Payroll.DataAccess.DAL.Contracts\OpenQbit.Payroll.DataAccess.DAL.Contracts.csproj", "{80E9C282-3E4E-4173-8125-8BF331EA30D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.Service.WebAPI", "OpenQbit.Payroll.Service.WebAPI\OpenQbit.Payroll.Service.WebAPI.csproj", "{EE3F0580-44D5-4377-97B4-B3C7107F69F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,18 +55,22 @@ Global
 		{1A5B37C8-FB3A-40FA-AD45-BF3B19E0B4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A5B37C8-FB3A-40FA-AD45-BF3B19E0B4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A5B37C8-FB3A-40FA-AD45-BF3B19E0B4D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F6434A2-02A9-4013-AC89-229C71E3D6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F6434A2-02A9-4013-AC89-229C71E3D6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F6434A2-02A9-4013-AC89-229C71E3D6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F6434A2-02A9-4013-AC89-229C71E3D6FD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{854F7F4C-F649-4357-81E8-0B4E0E273037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{854F7F4C-F649-4357-81E8-0B4E0E273037}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{854F7F4C-F649-4357-81E8-0B4E0E273037}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{854F7F4C-F649-4357-81E8-0B4E0E273037}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BDD7B771-24E7-47BD-A093-71F5E2BDAE10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDD7B771-24E7-47BD-A093-71F5E2BDAE10}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDD7B771-24E7-47BD-A093-71F5E2BDAE10}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDD7B771-24E7-47BD-A093-71F5E2BDAE10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E9C282-3E4E-4173-8125-8BF331EA30D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E9C282-3E4E-4173-8125-8BF331EA30D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E9C282-3E4E-4173-8125-8BF331EA30D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E9C282-3E4E-4173-8125-8BF331EA30D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE3F0580-44D5-4377-97B4-B3C7107F69F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3F0580-44D5-4377-97B4-B3C7107F69F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3F0580-44D5-4377-97B4-B3C7107F69F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3F0580-44D5-4377-97B4-B3C7107F69F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,9 +80,10 @@ Global
 		{0838B7A7-CDD6-40A5-A5A3-D59ADF5332CD} = {9AFC118C-A0B4-4BD9-8547-E1AB329B486D}
 		{63785ABE-530F-4451-A6A0-7555CA73D2D7} = {7CE6ED71-84F3-42D5-9126-F364BDE0F384}
 		{1A5B37C8-FB3A-40FA-AD45-BF3B19E0B4D7} = {7CE6ED71-84F3-42D5-9126-F364BDE0F384}
-		{1F6434A2-02A9-4013-AC89-229C71E3D6FD} = {9AFC118C-A0B4-4BD9-8547-E1AB329B486D}
 		{D8E1D8A6-3B10-4AF6-A653-EC66DAD465BC} = {C13BC277-9FD4-407B-91F2-AA6417C5A6FD}
 		{854F7F4C-F649-4357-81E8-0B4E0E273037} = {D8E1D8A6-3B10-4AF6-A653-EC66DAD465BC}
-		{BDD7B771-24E7-47BD-A093-71F5E2BDAE10} = {62BD6000-C265-42EF-9E2C-DB3ECE351138}
+		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A} = {C13BC277-9FD4-407B-91F2-AA6417C5A6FD}
+		{80E9C282-3E4E-4173-8125-8BF331EA30D5} = {9AFC118C-A0B4-4BD9-8547-E1AB329B486D}
+		{EE3F0580-44D5-4377-97B4-B3C7107F69F4} = {62BD6000-C265-42EF-9E2C-DB3ECE351138}
 	EndGlobalSection
 EndGlobal

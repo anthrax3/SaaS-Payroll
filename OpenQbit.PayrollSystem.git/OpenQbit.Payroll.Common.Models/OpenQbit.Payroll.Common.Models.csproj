@@ -54,6 +54,7 @@
     <Compile Include="Bank.cs" />
     <Compile Include="Bonus.cs" />
     <Compile Include="BonusType.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Deduction.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="Employee.cs" />
@@ -66,7 +67,7 @@
     <Compile Include="Salary.cs" />
     <Compile Include="SystemUser.cs" />
     <Compile Include="System\Customer.cs" />
-    <Compile Include="System\System.cs" />
+    <Compile Include="System\Systems.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using OpenQbit.Payroll.BLL.BusinessService.Contracts;
 using OpenQbit.Payroll.Common.Models;
 using OpenQbit.Payroll.Common.Utils.Logs;
-using OpenQbit.PayrollSystem.DataAccess.DAL.Contracts;
+using OpenQbit.Payroll.DataAccess.DAL.Contracts;
 
 namespace OpenQbit.Payroll.BLL.BusinessService
 {
