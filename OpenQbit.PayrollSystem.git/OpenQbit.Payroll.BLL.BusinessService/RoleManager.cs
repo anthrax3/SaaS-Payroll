@@ -25,5 +25,30 @@ namespace OpenQbit.Payroll.BLL.BusinessService
             logger.LogError("");
             return repository.Create<Role>(role);
         }
+
+        public bool EditRole(Role role)
+        {
+            logger.LogError("");
+            return repository.Update<Role>(role);
+        }
+
+        public bool RemoveRole(Role role)
+        {
+            logger.LogError("");
+
+            return repository.Delete<Role>(role);
+        }
+
+        public List<Role> GetAllRoles()
+        {
+            logger.LogError("");
+            return repository.GetAll<Role>();
+        }
+
+        public Role FindRole(Role role)
+        {
+            logger.LogError("");
+            return repository.Find<Role>(R => R.Id == role.Id);
+        }
     }
 }

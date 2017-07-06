@@ -25,5 +25,29 @@ namespace OpenQbit.Payroll.BLL.BusinessService
             logger.LogError("");
             return repository.Create<Loan>(loan);
         }
+
+        public bool EditLoan(Loan loan)
+        {
+            logger.LogError("");
+            return repository.Update<Loan>(loan);
+        }
+
+        public bool RemoveLoan(Loan loan)
+        {
+            logger.LogError("");
+            return repository.Delete<Loan>(loan);
+        }
+
+        public List<Loan> GetAllLoans()
+        {
+            logger.LogError("");
+            return repository.GetAll<Loan>();
+        }
+
+        public Loan FindLoan(Loan loan)
+        {
+            logger.LogError("");
+            return repository.Find<Loan>(L => L.Id == loan.Id);
+        }
     }
 }

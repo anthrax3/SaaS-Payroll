@@ -25,5 +25,29 @@ namespace OpenQbit.Payroll.BLL.BusinessService
             logger.LogError("");
             return repository.Create<SystemUser>(systemUser);
         }
+
+        public bool EditSystemUser(SystemUser systemUser)
+        {
+            logger.LogError("");
+            return repository.Update<SystemUser>(systemUser);
+        }
+
+        public bool RemoveSystemUser(SystemUser systemUser)
+        {
+            logger.LogError("");
+            return repository.Delete<SystemUser>(systemUser);
+        }
+
+        public List<SystemUser> GetAllSystemUser()
+        {
+            logger.LogError("");
+            return repository.GetAll<SystemUser>();
+        }
+
+        public SystemUser FindSystemUser(SystemUser systemUser)
+        {
+            logger.LogError("");
+            return repository.Find<SystemUser>(S => S.Id == systemUser.Id);
+        }
     }
 }

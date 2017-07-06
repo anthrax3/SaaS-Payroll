@@ -10,5 +10,9 @@ namespace OpenQbit.Payroll.BLL.BusinessService.Contracts
     public interface ILoanManager
     {
         bool RecordLoan(Loan loan);
+        bool EditLoan(Loan loan);
+        bool RemoveLoan(Loan loan);
+        List<Loan> GetAllLoans();
+        Loan FindLoan(Loan loan);
     }
 }
