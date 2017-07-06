@@ -1,4 +1,4 @@
-﻿using OpenQbit.Payroll.Common.Models;
+﻿ using OpenQbit.Payroll.Common.Models;
 using OpenQbit.Payroll.Common.Models.System;
 using System;
 using System.Collections.Generic;

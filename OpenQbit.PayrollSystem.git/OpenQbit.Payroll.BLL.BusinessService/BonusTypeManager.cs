@@ -37,6 +37,7 @@ namespace OpenQbit.Payroll.BLL.BusinessService
         {
             logger.LogError("");
             return repository.Delete<BonusType>(bonusType);
+
         }
 
         public List<BonusType> GetAllBonusType()

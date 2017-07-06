@@ -10,5 +10,9 @@ namespace OpenQbit.Payroll.BLL.BusinessService.Contracts
     public interface IPersonManager
     {
         bool RecordPerson(Person person);
+        bool EditPerson(Person person);
+        bool RemovePerson(Person person);
+        List<Person> GetAllPersons();
+        Person FindPerson(Person person);
     }
 }

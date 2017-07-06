@@ -10,5 +10,10 @@ namespace OpenQbit.Payroll.BLL.BusinessService.Contracts
     public interface IRoleManager
     {
         bool RecordRole(Role role);
+       
+        bool EditRole(Role role);
+        bool RemoveRole(Role role);
+        List<Role> GetAllRoles();
+        Role FindRole(Role role);
     }
 }
