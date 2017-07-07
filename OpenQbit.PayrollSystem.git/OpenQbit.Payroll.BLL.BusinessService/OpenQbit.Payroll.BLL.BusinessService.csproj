@@ -46,6 +46,7 @@
     <Compile Include="BonusManager.cs" />
     <Compile Include="BonusTypeManager.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="CustomerManager.cs" />
     <Compile Include="DeductionManager.cs" />
     <Compile Include="DepartmentManager.cs" />
     <Compile Include="EmployeeManager.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleManager.cs" />
     <Compile Include="SalaryManager.cs" />
+    <Compile Include="SystemsManager.cs" />
     <Compile Include="SystemUserManager.cs" />
   </ItemGroup>
   <ItemGroup>

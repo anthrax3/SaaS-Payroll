@@ -26,5 +26,29 @@ namespace OpenQbit.Payroll.BLL.BusinessService
             logger.LogError("");
             return repository.Create<BonusType>(bonusType);
         }
+
+        public bool EditBonusType(BonusType bonusType)
+        {
+            logger.LogError("");
+            return repository.Update<BonusType>(bonusType);
+        }
+
+        public bool RemoveBonusType(BonusType bonusType)
+        {
+            logger.LogError("");
+            return repository.Delete<BonusType>(bonusType);
+        }
+
+        public List<BonusType> GetAllBonusType()
+        {
+            logger.LogError("");
+            return repository.GetAll<BonusType>();
+        }
+
+        public BonusType FindBonusType(BonusType bonusType)
+        {
+            logger.LogError("");
+            return repository.Find<BonusType>(B => B.Id == bonusType.Id);
+        }
     }
 }

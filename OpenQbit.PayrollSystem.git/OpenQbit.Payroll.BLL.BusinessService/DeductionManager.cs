@@ -26,5 +26,30 @@ namespace OpenQbit.Payroll.BLL.BusinessService
             logger.LogError("");
             return repository.Create<Deduction>(deduction);
         }
+
+
+        public bool EditDeduction(Deduction deduction)
+        {
+            logger.LogError("");
+            return repository.Update<Deduction>(deduction);
+        }
+
+        public bool RemoveDeduction(Deduction deduction)
+        {
+            logger.LogError("");
+            return repository.Delete<Deduction>(deduction);
+        }
+
+        public List<Deduction> GetAllDeductions()
+        {
+            logger.LogError("");
+            return repository.GetAll<Deduction>();
+        }
+
+        public Deduction FindDeduction(Deduction deduction)
+        {
+            logger.LogError("");
+            return repository.Find<Deduction>(A => A.Id == deduction.Id);
+        }
     }
 }

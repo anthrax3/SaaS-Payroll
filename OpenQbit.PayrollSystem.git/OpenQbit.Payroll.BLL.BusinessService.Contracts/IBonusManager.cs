@@ -10,5 +10,9 @@ namespace OpenQbit.Payroll.BLL.BusinessService.Contracts
     public interface IBonusManager
     {
         bool RecordBonus(Bonus bonus);
+        bool EditBonus(Bonus bonus);
+        bool RemoveBonus(Bonus bonus);
+        List<Bonus> GetAllBonus();
+        Bonus FindBonus(Bonus bonus);
     }
 }

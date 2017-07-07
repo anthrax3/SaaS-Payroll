@@ -46,6 +46,7 @@
     <Compile Include="IBankManager.cs" />
     <Compile Include="IBonusManager.cs" />
     <Compile Include="IBonusTypeManager.cs" />
+    <Compile Include="ICustomerManager.cs" />
     <Compile Include="IDeductionManager.cs" />
     <Compile Include="IDepartmentManager.cs" />
     <Compile Include="IEmployeeManager.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="IPersonManager.cs" />
     <Compile Include="IRoleManager.cs" />
     <Compile Include="ISalaryManager.cs" />
+    <Compile Include="ISystemsManager.cs" />
     <Compile Include="ISystemUserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
