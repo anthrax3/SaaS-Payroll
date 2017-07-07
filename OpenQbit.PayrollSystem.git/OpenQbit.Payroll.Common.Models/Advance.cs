@@ -11,7 +11,7 @@ namespace OpenQbit.Payroll.Common.Models
         public int Id { get; set; }
         public int EmployeeId { get; set; }
         public DateTime Date { get; set; }
-        public double Aount { get; set; }
+        public double Amount { get; set; }
 
         public virtual Employee Employee { get; set; }
 
