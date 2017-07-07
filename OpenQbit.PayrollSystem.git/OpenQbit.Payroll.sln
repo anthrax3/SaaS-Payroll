@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.DataAccess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Payroll.Service.WebAPI", "OpenQbit.Payroll.Service.WebAPI\OpenQbit.Payroll.Service.WebAPI.csproj", "{B80B818F-132A-46FB-8158-CE6E79F1F9E2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 Test Clients", "6 Test Clients", "{8A0EA02C-5205-43FA-99C3-BC9D4B70BCFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayrollTest.Presentation.Web", "PayrollTest.Presentation.Web\PayrollTest.Presentation.Web.csproj", "{A5373EC0-1D5E-4D13-A062-5573BC5C031E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,10 @@ Global
 		{B80B818F-132A-46FB-8158-CE6E79F1F9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B80B818F-132A-46FB-8158-CE6E79F1F9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B80B818F-132A-46FB-8158-CE6E79F1F9E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5373EC0-1D5E-4D13-A062-5573BC5C031E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5373EC0-1D5E-4D13-A062-5573BC5C031E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5373EC0-1D5E-4D13-A062-5573BC5C031E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5373EC0-1D5E-4D13-A062-5573BC5C031E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,5 +93,6 @@ Global
 		{F10E3541-ECE1-44C4-81D9-2F2F1E65783A} = {C13BC277-9FD4-407B-91F2-AA6417C5A6FD}
 		{80E9C282-3E4E-4173-8125-8BF331EA30D5} = {9AFC118C-A0B4-4BD9-8547-E1AB329B486D}
 		{B80B818F-132A-46FB-8158-CE6E79F1F9E2} = {62BD6000-C265-42EF-9E2C-DB3ECE351138}
+		{A5373EC0-1D5E-4D13-A062-5573BC5C031E} = {8A0EA02C-5205-43FA-99C3-BC9D4B70BCFD}
 	EndGlobalSection
 EndGlobal
