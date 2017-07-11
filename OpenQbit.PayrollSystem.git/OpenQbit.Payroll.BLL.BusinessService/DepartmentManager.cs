@@ -25,5 +25,30 @@ namespace OpenQbit.Payroll.BLL.BusinessService
             logger.LogError("");
             return repository.Create<Department>(department);
         }
+
+
+        public bool EditDepartment(Department department)
+        {
+            logger.LogError("");
+            return repository.Update<Department>(department);
+        }
+
+        public bool RemoveDepartment(Department department)
+        {
+            logger.LogError("");
+            return repository.Delete<Department>(department);
+        }
+
+        public List<Department> GetAllDepartments()
+        {
+            logger.LogError("");
+            return repository.GetAll<Department>();
+        }
+
+        public Department FindDepartment(Department department)
+        {
+            logger.LogError("");
+            return repository.Find<Department>(A => A.Id == department.Id);
+        }
     }
 }

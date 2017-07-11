@@ -1,0 +1,76 @@
+﻿@model IEnumerable<PayrollTest.Presentation.Web.Models.Attendance>
+
+@{
+    ViewBag.Title = "GetAttendance";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GetAttendance</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SystemId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OutTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShortLeaveInTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShortLeaveOutTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OTHourse)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeeId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SystemId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OutTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShortLeaveInTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShortLeaveOutTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OTHourse)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

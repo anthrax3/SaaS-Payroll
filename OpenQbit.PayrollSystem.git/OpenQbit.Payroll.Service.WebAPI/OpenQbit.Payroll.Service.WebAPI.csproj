@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{EE3F0580-44D5-4377-97B4-B3C7107F69F4}</ProjectGuid>
+    <ProjectGuid>{B80B818F-132A-46FB-8158-CE6E79F1F9E2}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -206,6 +206,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AttendanceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -213,20 +214,6 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\API\APIAdvance.cs" />
-    <Compile Include="Models\API\APIAttendance.cs" />
-    <Compile Include="Models\API\APIBank.cs" />
-    <Compile Include="Models\API\APIBonus.cs" />
-    <Compile Include="Models\API\APIBonusType.cs" />
-    <Compile Include="Models\API\APIDeduction.cs" />
-    <Compile Include="Models\API\APIDepartment.cs" />
-    <Compile Include="Models\API\APIEmployee.cs" />
-    <Compile Include="Models\API\APIGrade.cs" />
-    <Compile Include="Models\API\APILeaves.cs" />
-    <Compile Include="Models\API\APILoan.cs" />
-    <Compile Include="Models\API\APIRole.cs" />
-    <Compile Include="Models\API\APISalary.cs" />
-    <Compile Include="Models\API\APISystemUser.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -290,6 +277,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\API\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -298,6 +286,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenQbit.Payroll.BLL.BusinessService.Contracts\OpenQbit.Payroll.BLL.BusinessService.Contracts.csproj">
+      <Project>{1a5b37c8-fb3a-40fa-ad45-bf3b19e0b4d7}</Project>
+      <Name>OpenQbit.Payroll.BLL.BusinessService.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Payroll.Common.Ioc\OpenQbit.Payroll.Common.Ioc.csproj">
+      <Project>{f10e3541-ece1-44c4-81d9-2f2f1e65783a}</Project>
+      <Name>OpenQbit.Payroll.Common.Ioc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Payroll.Common.Models\OpenQbit.Payroll.Common.Models.csproj">
+      <Project>{9c842b7b-f408-49a7-877e-a1f2c716f18c}</Project>
+      <Name>OpenQbit.Payroll.Common.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -315,9 +317,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50575</DevelopmentServerPort>
+          <DevelopmentServerPort>55882</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50575/</IISUrl>
+          <IISUrl>http://localhost:55882/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

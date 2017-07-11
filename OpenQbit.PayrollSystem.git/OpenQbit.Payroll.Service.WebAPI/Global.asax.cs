@@ -18,6 +18,9 @@ namespace OpenQbit.Payroll.Service.WebAPI
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Common.Ioc.UnityResolver.Register();
+            
         }
     }
 }

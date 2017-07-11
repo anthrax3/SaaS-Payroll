@@ -25,5 +25,30 @@ namespace OpenQbit.Payroll.BLL.BusinessService
             logger.LogError("");
             return repository.Create<Grade>(grade);
         }
+
+
+        public bool EditGrade(Grade grade)
+        {
+            logger.LogError("");
+            return repository.Update<Grade>(grade);
+        }
+
+        public bool RemoveGrade(Grade grade)
+        {
+            logger.LogError("");
+            return repository.Delete<Grade>(grade);
+        }
+
+        public List<Grade> GetAllGrades()
+        {
+            logger.LogError("");
+            return repository.GetAll<Grade>();
+        }
+
+        public Grade FindGrade(Grade grade)
+        {
+            logger.LogError("");
+            return repository.Find<Grade>(A => A.Id == grade.Id);
+        }
     }
 }

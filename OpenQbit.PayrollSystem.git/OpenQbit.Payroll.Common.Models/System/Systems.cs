@@ -9,6 +9,7 @@ namespace OpenQbit.Payroll.Common.Models.System
     public class Systems
     {
         public int SystemId { get; set; }
+        public int CustomerId { get; set; }
         public string Description { get; set; }
 
         public virtual Customer Customer { get; set; }
