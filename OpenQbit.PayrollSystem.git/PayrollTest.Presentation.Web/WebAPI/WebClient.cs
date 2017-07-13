@@ -26,7 +26,7 @@ namespace PayrollTest.Presentation.Web.WebAPI
         {
             Advance advance = new Advance();
 
-            using (var response = await _client.GetAsync(" http://localhost:55882/API/Advance/GetAdvance"))
+            using (var response = await _client.GetAsync("http://localhost:55882/API/Advance/GetAdvance"))
             {
                 if (response.IsSuccessStatusCode)
                 {
@@ -41,7 +41,7 @@ namespace PayrollTest.Presentation.Web.WebAPI
         {
             Attendance attendance = new Attendance();
 
-            using (var response = await _client.GetAsync(" http://localhost:55882/API/Attendance/GetAttendance"))
+            using (var response = await _client.GetAsync("http://localhost:55882/API/Attendance/GetAttendance"))
             {
                 if (response.IsSuccessStatusCode)
                 {
