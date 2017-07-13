@@ -12,9 +12,9 @@ namespace PayrollTest.Presentation.Web.WebAPI
 {
     public class WebClient
     {
-        HttpClient _client;
+        private HttpClient _client;
 
-        JavaScriptSerializer _jsonSerializer = new JavaScriptSerializer();
+        private JavaScriptSerializer _jsonSerializer = new JavaScriptSerializer();
 
 
         public WebClient()
@@ -288,7 +288,7 @@ namespace PayrollTest.Presentation.Web.WebAPI
 
             return systemUser;
         }
-        
+
 
     }
 }
